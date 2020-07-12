@@ -1,0 +1,60 @@
+<!-- Describe task in general -->
+
+<p>
+    The robots have discovered strange islands in the Bermuda Triangle.<br/>
+    You have to help the robots calculate once again.
+</p>
+
+<p>
+    The triangular sea area is divided into a triangular area, numbered from top to bottom and from left to right.
+    (Row-major order)
+</p>
+
+<p>
+    You are given a set of integers with land numbers as input values.
+</p>
+
+<ul>
+    <li>Triangles with adjacent sides are considered to be a group of the same island.</li>
+    <li>The number of those triangles is the area of the island.</li>
+</ul>
+
+<p>You have to return a list (or iterable) of the area of the island you found.</p>
+
+</ul>
+<!-- Give some usage examples -->
+<div class="for_info_only">
+    <p>
+        <strong>Example:</strong>
+    </p>
+    <pre class="brush: python">sorted(triangular_islands({1})) == [1]
+sorted(triangular_islands({4, 3})) == [2]
+sorted(triangular_islands({7, 1, 8, 4})) == [1, 3]</pre>
+    <table>
+        <tr>
+            <td><img src="{{MEDIA}}triangular_islands_example.png" style="max-height:200px; padding: 10px;"></td>
+        </tr>
+    </table>
+</div>
+
+<!-- Explain input and output values -->
+<p>
+    <strong>Input: </strong> a set of integers with land numbers.
+</p>
+
+<p>
+    <strong>Output: </strong> a list (or iterable) of integers with the area of the island.
+</p>
+
+
+
+
+<!-- Here you can explain how it can be used in development -->
+
+<!-- The section is optional -->
+<p>
+    <strong>Precondition:</strong><br>
+    <ul>
+        <li>1 &le; land_number &le; 100</li>
+    </ul>
+</p>
