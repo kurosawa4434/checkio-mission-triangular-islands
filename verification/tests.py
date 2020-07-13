@@ -8,19 +8,16 @@ Each test is a dict with
 """
 from random import randint, sample
 from my_solution import triangular_islands
-from pprint import pprint
 
 
-def make_random_tests(n):
+def make_random_tests(*num):
     random_tests = []
-    for _ in range(n):
-        triangle_max = randint(1, 100)
+    for triangle_max in num:
         input_num = sample(range(1, triangle_max + 1), randint(1, triangle_max))
         random_tests.append({
             "input": input_num,
             "answer": sorted(triangular_islands(input_num)),
         })
-    # pprint(random_tests)
     return random_tests
 
 
@@ -63,5 +60,5 @@ TESTS = {
             "answer": [8, 9, 24, 33],
         },
     ],
-    "Randoms": make_random_tests(10),
+    "Randoms": make_random_tests(9, 9, 9, 16, 25, 36, 49, 64, 81, 100, 100, 100, 100),
 }
