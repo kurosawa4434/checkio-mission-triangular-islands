@@ -1,5 +1,5 @@
-checkio-mission-similar-triangles
+checkio-mission-triangular-islands
 =====================
 
-Checkio Mission "Similar Triangles"
+Checkio Mission "Triangular Islands"
 
