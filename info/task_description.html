@@ -1,13 +1,12 @@
 <!-- Describe task in general -->
 
 <p>
-    The robots have discovered strange islands in the Bermuda Triangle.<br/>
-    You have to help the robots calculate once again.
+    The robots have discovered the strange islands in the Bermuda Triangle.<br/>
+    You need to help robots calculate them.
 </p>
 
 <p>
-    The triangular sea area is divided into a triangular area, numbered from top to bottom and from left to right.
-    (Row-major order)
+    The triangular sea area is divided into several triangular areas, numbered from top to bottom and from left to right in row-major order.
 </p>
 
 <p>
@@ -16,10 +15,10 @@
 
 <ul>
     <li>Triangles with adjacent sides are considered to be a group of the same island.</li>
-    <li>The number of those triangles is the area of the island.</li>
+    <li>The number of those triangles is the island area.</li>
 </ul>
 
-<p>You have to return a list (or iterable) of the area of the island you found.</p>
+<p>You have to return a list (or an iterable) of the island areas you’ve found.</p>
 
 </ul>
 <!-- Give some usage examples -->
@@ -39,11 +38,11 @@ sorted(triangular_islands({7, 1, 8, 4})) == [1, 3]</pre>
 
 <!-- Explain input and output values -->
 <p>
-    <strong>Input: </strong> a set of integers with land numbers.
+    <strong>Input: </strong> A set of integers with land numbers.
 </p>
 
 <p>
-    <strong>Output: </strong> a list (or iterable) of integers with the area of the island.
+    <strong>Output: </strong>A list (or an iterable) of integers with the island areas.
 </p>
 
 
